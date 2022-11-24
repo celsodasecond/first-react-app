@@ -11,7 +11,7 @@ const App = () => {
         <div>
             <label htmlFor='name' className='label'>enter e-mail</label>
             <input id="name" type="text"></input>
-            <button style={{backgroundColor: 'red', color: 'white'}}>
+            <button style={{backgroundColor: 'black', color: 'white'}}>
                 {getButtonText()}
             </button>
         </div>
