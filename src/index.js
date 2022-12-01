@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SingleComment from './components/SingleComment.js'
+import dogpic1 from './assets/dogpic1.jpg'
+import dogpic2 from './assets/dogpic2.jpg'
+import dogpic3 from './assets/dogpic3.jpg'
 
 function getButtonText() {
     return 'Hi There!';
@@ -8,13 +12,27 @@ function getButtonText() {
 // Function Based Component using ES 2015 Syntax
 const App = () => {
     return(
-        <div>
-            <label htmlFor='name' className='label'>enter e-mail</label>
-            <input id="name" type="text"></input>
-            <button style={{backgroundColor: 'black', color: 'white'}}>
-                {getButtonText()}
-            </button>
+        <div className='ui comments'>
+            <SingleComment 
+                dogname='Milo' 
+                image={dogpic1}
+                date='Today at 5:00 PM'
+                text='Send me Food!'
+            />
+            <SingleComment 
+                dogname='Sadie' 
+                image={dogpic2}
+                date='Today at 6:00 PM'
+                text='Send me Water!'
+            />
+            <SingleComment 
+                dogname='Max' 
+                image={dogpic3}
+                date='Today at 7:00 PM'
+                text='Send me Milk!'
+            />
         </div>
+        
     )
 }
 
