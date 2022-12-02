@@ -19,7 +19,7 @@ The concept behind this app (Blog Post Comment) is to study react basics.
 
 All usage instruction and information update on [create-react-app.md](https://github.com/celsodasecond/first-react-app/blob/master/create-react-app.md).
 
-## Developing
+## Development
 
 #### Built With
 
